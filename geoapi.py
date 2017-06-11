@@ -8,9 +8,9 @@ data = urllib.urlopen(url).read()
 print 'Retrieved:',len(data),'characters'
 
 try:
-  info = json.loads(str(data))
+    info = json.loads(str(data))
 except:
-  info = None
+    info = None
 
 if info['status'] == 'OK':
-  print 'Place id',info['results'][0]['place_id']
+    print 'Place id',info['results'][0]['place_id']

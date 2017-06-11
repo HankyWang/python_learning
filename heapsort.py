@@ -1,12 +1,10 @@
 n = 10
-
 def parent(i):
     return i // 2
 def left(i):
     return i * 2
 def right(i):
     return i * 2 + 1
-
 def max_heapify(lst, i):
     global n
     l, r = left(i), right(i)
